@@ -1,0 +1,45 @@
+.verification-code-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.verification-code-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.verification-code-input input[type="text"] {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .verification-code-input input[type="text"] {
+    width: 40px;
+    height: 40px;
+  }
+}
+.verification-code-input input[type="text"]:focus {
+  outline: none;
+  border-color: #2caae2;
+}
+
+.verification-code-form button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 200px;
+  color: white;
+  margin: 10px auto;
+  background-color: #2caae2;
+}

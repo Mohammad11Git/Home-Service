@@ -1,0 +1,23 @@
+.provider-navbar .navbar-brand {
+  margin: 0 !important;
+}
+.provider-navbar .logo {
+  width: 130px !important;
+}
+.provider-navbar .navbar-brand > ion-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+.provider-navbar .navbar-brand a > ion-icon {
+  font-size: 18px !important;
+  cursor: pointer;
+  color: white;
+}
+.provider-offcanvas ul a ion-icon {
+  font-size: 20px;
+}
+.provider-offcanvas .loading {
+  opacity: 0.5 !important;
+  cursor: auto !important;
+}

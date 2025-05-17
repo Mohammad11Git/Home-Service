@@ -1,0 +1,56 @@
+.user-profile {
+  background-color: #f1f1f1;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.user-profile .container > .row {
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.user-profile .container > .row > div {
+  padding: 20px;
+  height: max-content;
+  background-color: white;
+}
+
+.user-profile .row > div h2 {
+  font-size: 20px;
+}
+
+.user-profile .row > div hr {
+  color: black;
+  margin: 20px 0 !important;
+}
+
+.user-profile .row > div p {
+  font-size: 17px;
+}
+
+/* .user-profile .row>div ul .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.user-profile .row > div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.user-profile .row > div ul .row .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: rgb(239, 239, 49);
+  padding: 0;
+}
+
+.user-profile .row > div ul .row .stars span {
+  color: #7777;
+}

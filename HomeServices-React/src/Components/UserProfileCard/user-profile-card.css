@@ -1,0 +1,114 @@
+.user-profile-card .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.user-profile-card .row .image-holder {
+  width: 200px;
+  height: 180px;
+}
+
+.user-profile-card .row .image-holder img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.user-profile-card h2 {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-profile-card h2 > span {
+  font-size: 25px;
+}
+
+.user-profile-card h2 .green-circle {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: rgb(11, 232, 11);
+}
+
+.user-profile-card .row div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-profile-card div > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.user-profile-card div span ion-icon {
+  font-size: 18px;
+}
+
+.user-profile-card .row > a {
+  /* transform: translateX(-100%); */
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  gap: 10px;
+  color: white;
+  background-color: #2caae2;
+  padding: 10px 15px;
+  font-size: 18px;
+  width: max-content;
+}
+
+.user-profile-card .row > a ion-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.user-profile-card .row ul {
+  margin: 30px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-card .row ul a {
+  text-decoration: none;
+  padding: 15px 20px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-profile-card .row ul a.active {
+  background-color: #f1f1f1;
+}
+
+.user-profile-card .row ul a ion-icon {
+  font-size: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 420px) {
+  .user-profile-card .row ul {
+    justify-content: center;
+  }
+  .user-profile-card .row ul a {
+    padding: 15px 10px;
+    font-size: 15px;
+  }
+  .user-profile-card .row ul a ion-icon {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,130 @@
+form.register-1,
+form.register-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 600px;
+  max-width: 600px;
+  padding: 50px;
+  background-color: #f1f1f1;
+  margin-top: 80px;
+  border-radius: 5px;
+}
+
+form.register-1 .logo,
+form.register-2 .logo {
+  width: 220px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+form.register-1 .logo img,
+form.register-2 .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+form.register-1 h2 {
+  width: max-content;
+  margin: 10px auto;
+}
+
+form.register-1 div > label,
+form.register-2 div > label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+form.register-1 label span,
+form.register-2 label span {
+  color: #e20e0e;
+}
+
+form.register-1 > div input {
+  border: 1px solid #aaafb9;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f7f9fc;
+  line-height: 1.25;
+  padding: 10px 15px;
+}
+
+form.register-1 input:focus {
+  outline: none;
+}
+
+form.register-1 input + p,
+form.register-1 div + p {
+  color: #e20e0e;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+form div button.eye {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form div button.eye ion-icon {
+  font-size: 25px;
+}
+
+form.register-2 .submit,
+form.register-1 .next,
+form.register-2 .prev {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  background-color: #2caae2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.register-1 .next {
+  width: max-content;
+  text-align: left;
+}
+
+form.register-1 > span {
+  font-size: 15px;
+  text-align: left;
+  color: black;
+}
+
+form.register-2 .react-date-picker {
+  height: 40px;
+  background-color: #f7f9fc;
+  margin-top: 15px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 500px) {
+  form.register-1 .full-name {
+    flex-wrap: wrap;
+    gap: 30px !important;
+  }
+  form.register-1 .full-name > div {
+    width: 100% !important;
+  }
+}

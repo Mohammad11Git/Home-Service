@@ -1,0 +1,97 @@
+.service-details {
+  background-color: #f1f1f1;
+  padding-top: 130px;
+  min-height: 100vh;
+}
+
+.service-details .container h4 {
+  color: #777777;
+}
+
+.service-details button {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  background-color: #2caae2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-details .container > .row > div {
+  padding: 20px;
+  height: max-content;
+  background-color: white;
+}
+
+.service-details .container > .row {
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.service-details .service-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 450px) {
+  .service-details .service-image {
+    height: 250px;
+  }
+}
+
+.service-details .areas span {
+  background-color: #777777;
+  color: white;
+  font-size: 13px;
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.service-details .user-card span {
+  cursor: pointer;
+}
+
+.service-details .user-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.service-details .user-card {
+  font-size: 18px;
+}
+
+.service-details .row > div hr {
+  color: black;
+  margin: 20px 0 !important;
+}
+
+.service-details .row > div ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-details .row > div ul .row .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: rgb(239, 239, 49);
+  padding: 0;
+}
+
+.service-details .row > div ul .row .stars span {
+  color: #7777;
+}

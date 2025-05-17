@@ -1,0 +1,57 @@
+.user {
+  position: relative;
+}
+.userLoading {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(189, 183, 183);
+}
+
+.user .image-holder {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.user .image-holder img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user .list-group {
+  position: absolute;
+  left: 10px;
+  top: 90%;
+  z-index: -1 !important;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.1s, top 0.1s !important;
+}
+
+.user .list-group.show {
+  visibility: visible;
+  z-index: 222 !important;
+  opacity: 1;
+  top: 105%;
+}
+
+.user .list-group-item a,
+.user .list-group-item {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.user .list-group-item a ion-icon,
+.user .list-group-item ion-icon {
+  font-size: 18px;
+}
+.user .list-group-item.loading {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

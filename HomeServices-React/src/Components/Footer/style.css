@@ -1,0 +1,28 @@
+footer {
+  background-color: #444444;
+  padding: 20px 0;
+  color: white;
+}
+
+footer .logo {
+  width: 150px;
+  height: 40px;
+}
+
+footer .logo img {
+  width: 100%;
+  object-fit: contain;
+}
+
+footer p {
+  font-size: 16px;
+  opacity: 0.5;
+  margin: 0;
+}
+
+@media (max-width: 400px) {
+  footer .logo,
+  footer p {
+    margin: 10px auto;
+  }
+}

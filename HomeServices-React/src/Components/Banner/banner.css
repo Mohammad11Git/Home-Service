@@ -1,0 +1,18 @@
+.signup-now {
+  background-color: white;
+  padding-bottom: 30px !important;
+}
+
+.signup-now h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.signup-now a {
+  padding: 10px 20px;
+  color: white;
+  font-size: 20px;
+  background-color: cadetblue;
+  display: flex;
+  margin: 30px auto;
+}

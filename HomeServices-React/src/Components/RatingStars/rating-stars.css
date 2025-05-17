@@ -1,0 +1,22 @@
+.rating-stars {
+    display: flex;
+    align-items: center;
+    /* gap: 5px; */
+    width: max-content;
+}
+
+.rating-stars div {
+    cursor: pointer;
+    padding: 0 5px;
+    transition: 0.3s;
+}
+
+.rating-stars ion-icon {
+    font-size: 20px;
+}
+
+.rating-stars .active {
+    color: rgb(239, 239, 49) !important;
+    scale: 1.3;
+    rotate: 360deg;
+}

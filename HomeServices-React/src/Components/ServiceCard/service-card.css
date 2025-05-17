@@ -1,0 +1,58 @@
+.service-card {
+  padding: 20px;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+}
+
+.service-card > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-card .stars {
+  color: rgb(239, 239, 49);
+}
+
+.service-card .image-holder {
+  width: 80px;
+  height: 80px;
+}
+
+.service-card img {
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.service-card .image-skelton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(189, 183, 183);
+}
+
+.service-card .title {
+  color: #222222;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.service-card .title:hover {
+  color: #52b035;
+}
+
+.service-card .category {
+  color: #777777;
+  font-size: 16px;
+}
+
+.service-card .price {
+  color: #222222;
+  font-weight: 600;
+  font-size: 14px;
+}

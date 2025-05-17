@@ -1,0 +1,44 @@
+.filled-container,
+.outlined-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.filled-container {
+    max-width: 600px;
+    background-color: white;
+}
+
+.outlined-container input[type="text"] {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border: none;
+    font-size: 17px;
+    color: #333;
+    caret-color: #333;
+    outline: none;
+    background: transparent;
+}
+
+.filled-container input[type="text"] {
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+    border: none;
+    font-size: 17px;
+    color: #333;
+    caret-color: #333;
+    outline: none;
+    background: transparent;
+}
+
+.outlined-container ion-icon,
+.filled-container ion-icon {
+    font-size: 25px;
+    color: #999;
+    cursor: pointer;
+}

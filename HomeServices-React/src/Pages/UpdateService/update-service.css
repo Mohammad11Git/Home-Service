@@ -1,0 +1,182 @@
+.update-service {
+  margin-top: 70px;
+  background-color: #f1f1f1;
+}
+
+.update-service .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-service form.add-service,
+.update-service form.add-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  background-color: white;
+}
+
+.update-service form.add-form {
+  padding-bottom: 20px;
+}
+
+.update-service form.add-service {
+  gap: 30px;
+  padding: 50px;
+}
+
+.update-service form.add-service h3 {
+  width: max-content;
+  margin: 10px auto;
+}
+
+.update-service form.add-form h3 {
+  font-size: 20px !important;
+  width: max-content;
+  padding: 0 50px;
+  margin: 10px 0;
+}
+
+.update-service form.add-service label,
+.update-service form.add-form label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.update-service form.add-service label span {
+  color: #e20e0e;
+}
+
+.update-service form.add-service input,
+.update-service form.add-form input {
+  border: 1px solid #aaafb9;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f7f9fc;
+  line-height: 1.25;
+  padding: 10px 15px;
+}
+
+.update-service form.add-service input:focus,
+.update-service form.add-form input:focus {
+  outline: none;
+}
+
+.error {
+  border: 1px solid #e20e0e;
+}
+
+.update-service form.add-service input + p,
+.update-service form.add-service div + p {
+  color: #e20e0e;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.update-service form.add-service textarea,
+.update-service form.add-form textarea {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: #f7f9fc;
+  border: 1px solid #aaafb9;
+}
+
+.update-service form.add-service textarea:focus,
+.update-service form.add-form textarea:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.update-service .delete,
+.update-service form.add-form button.submit {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  background-color: #2caae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.update-service .delete ion-icon {
+  font-size: 20px;
+}
+
+.update-service form.add-form div.add {
+  color: white;
+  margin: 10px auto;
+  padding: 3px;
+  background-color: #222;
+  border-radius: 50%;
+  font-weight: 500;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.update-service form.add-form div.add ion-icon {
+  color: white;
+  font-size: 27px;
+  transition: 0.2s;
+}
+
+.update-service form.add-form div.add:hover ion-icon {
+  transform: rotate(90deg);
+}
+
+.update-service .delete {
+  background-color: #da3623;
+}
+
+.update-service form.add-service > span {
+  font-size: 15px;
+  text-align: left;
+  color: black;
+}
+
+.update-service form.add-form p {
+  padding: 0 50px;
+  text-align: center;
+}
+
+.update-service form.add-form .question {
+  padding: 20px 50px;
+}
+
+.update-service form.add-form .question ion-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+.update-service form.add-form .btn-holder {
+  padding: 20px 50px 0;
+}
+
+.update-service form.add-form button.submit {
+  width: max-content;
+  display: flex;
+  background-color: #2caae2 !important;
+}
+
+@media (max-width: 400px) {
+  .update-service form.add-form .question-body {
+    flex-wrap: wrap;
+  }
+  .update-service form.add-form .btn-holder button {
+    margin: 0 auto;
+  }
+}

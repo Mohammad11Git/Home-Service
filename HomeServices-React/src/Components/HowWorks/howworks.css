@@ -1,0 +1,20 @@
+.how-it-works .box {
+  background-color: #f1f1f1;
+  border: 7px solid white;
+}
+
+.how-it-works .box p {
+  font-size: 15px;
+}
+
+.how-it-works .image-holder {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-it-works .image-holder img {
+  width: 100%;
+}

@@ -1,0 +1,79 @@
+.provider .balance {
+  margin-top: 120px;
+  height: 150px;
+}
+.provider .balance div ion-icon {
+  font-size: 35px;
+}
+.provider .balance-number {
+  font-size: 40px;
+}
+.provider .infinity {
+  font-size: 100px;
+  margin-top: -30px;
+}
+
+form.provider-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 600px;
+  margin: 10px auto 80px;
+  border-radius: 5px;
+}
+
+form.provider-form label {
+  font-size: 17px;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+form.provider-form label span {
+  color: #e20e0e;
+}
+
+form.provider-form input {
+  border: 1px solid #aaafb9;
+  font-size: 15px;
+  width: 100%;
+  background-color: #f7f9fc;
+  line-height: 1.25;
+  padding: 10px 15px;
+}
+
+form.provider-form input:focus {
+  outline: none;
+}
+
+.error {
+  border: 1px solid #e20e0e;
+}
+
+form.provider-form input + p,
+form.provider-form div + p {
+  color: #e20e0e;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+form.provider-form button.submit {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 10px 0;
+  background-color: #2caae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form.provider-form > span {
+  font-size: 15px;
+  color: black;
+}

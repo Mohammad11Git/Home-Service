@@ -1,0 +1,17 @@
+section.quetions {
+    background-color: #f1f1f1;
+}
+
+.accordion-item {
+    background-color: transparent;
+}
+
+.accordion-item+hr {
+    margin: 30px 0 !important;
+}
+
+.quetions .accordion-header button {
+    font-size: 20px;
+    text-align: right;
+    gap: 10px;
+}

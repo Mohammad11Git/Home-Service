@@ -1,0 +1,7 @@
+.earnings {
+  min-height: 90vh;
+  margin-top: 200px;
+}
+.earnings .container div ion-icon {
+  font-size: 40px;
+}

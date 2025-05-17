@@ -1,0 +1,14 @@
+.search-results {
+    padding-top: 100px;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+
+.search-results h1 {
+    font-size: 45px;
+}
+
+/* .search-results p {
+    font-size: 15px;
+    max-width: 600px;
+} */

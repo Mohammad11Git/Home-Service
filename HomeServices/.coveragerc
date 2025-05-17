@@ -1,0 +1,31 @@
+# .coverage to control coverage.py 
+[run]
+source = .
+omit=
+    */.hypothesis/*
+    */.pytest_cache/*
+    *HomeServices/*.py
+    */media/*
+    */static/*
+    *manage.py
+    *__init__*
+    */__pycache__/*
+    */migrations/*
+    *wsgi.py
+    *apps.py
+    */testing/*
+    */tests/*
+    *tests.py
+    *spectacular.py
+    *spectacular_serializers.py
+    *settings.py
+    *settings_duplicate.py
+    *asgi.py
+    *admin.py
+
+
+[report]
+#fail_under = 100
+show_missing = True
+#skip_covered = True
+

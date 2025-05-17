@@ -1,0 +1,76 @@
+.my-recieve-orders {
+  padding-top: 100px;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.my-recieve-orders .row {
+  padding-bottom: 50px;
+}
+
+.my-recieve-orders .card {
+  position: relative;
+}
+
+.my-recieve-orders .card .service-info {
+  flex-basis: 50%;
+}
+
+.my-recieve-orders .image-holder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+}
+
+.my-recieve-orders .image-holder img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.my-recieve-orders h1 {
+  margin-bottom: 40px;
+}
+
+.my-recieve-orders .date {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.my-recieve-orders .form-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.my-recieve-orders ion-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.my-recieve-orders ion-icon:first-of-type {
+  color: #52b035;
+}
+
+.my-recieve-orders ion-icon:last-of-type {
+  color: rgb(181, 10, 10);
+}
+
+.my-recieve-orders button.done {
+  border: none;
+  outline: none;
+  padding: 6px 9px;
+  background-color: #52b035;
+  color: white;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.my-recieve-orders button.done ion-icon {
+  color: white;
+}

@@ -1,0 +1,98 @@
+section.update-profile form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+    max-width: 600px;
+    padding: 50px;
+    background-color: #f1f1f1;
+    margin-top: 80px;
+}
+
+section.update-profile form .image-holder {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+section.update-profile form .image-holder img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+section.update-profile form .image-holder .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.update-profile form .image-holder .overlay ion-icon {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section.update-profile form div>label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+section.update-profile .list-group {
+    position: absolute;
+    top: 60%;
+    left: -40%;
+    z-index: 3;
+}
+
+section.update-profile form label span {
+    color: #e20e0e;
+}
+
+section.update-profile form>div>div>input {
+    border: 1px solid #aaafb9;
+    font-size: 15px;
+    width: 100%;
+    background-color: #f7f9fc;
+    line-height: 1.25;
+    padding: 10px 15px;
+}
+
+section.update-profile form input:focus {
+    outline: none;
+}
+
+.error {
+    border: 1px solid #e20e0e;
+}
+
+section.update-profile form input+p {
+    color: #e20e0e;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+section.update-profile form .react-date-picker {
+    background-color: #f7f9fc;
+}
+
+section.update-profile form textarea {
+    width: 100%;
+    background-color: #f7f9fc;
+    border: 1px solid #aaafb9;
+}
+
+section.update-profile form textarea:focus {
+    outline: none;
+}

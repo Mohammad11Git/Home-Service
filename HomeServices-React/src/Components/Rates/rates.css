@@ -1,0 +1,43 @@
+.rates {
+  padding: 20px;
+  background-color: white;
+}
+
+.rates .image-holder {
+  width: 100px;
+  height: 100px;
+  padding: 0;
+}
+
+.rates .image-holder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.rates a {
+  color: black;
+  text-decoration: none;
+}
+
+.rates a:hover {
+  color: #2caae2;
+}
+
+.rates .stars ion-icon {
+  font-size: 18px;
+}
+
+.rates div span ion-icon {
+  font-size: 15px;
+  color: #7777;
+}
+
+.rates p {
+  font-size: 16px;
+}
+
+.rates .row hr:last-child {
+  margin: 10px 0 !important;
+}

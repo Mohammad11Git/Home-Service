@@ -1,0 +1,64 @@
+.my-service-orders {
+  padding-top: 100px;
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  position: relative;
+}
+
+.my-service-orders h1 {
+  padding-bottom: 50px;
+}
+
+.my-service-orders .image-holder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+}
+
+.my-service-orders .image-holder img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.my-service-orders ion-icon {
+  font-size: 20px;
+}
+
+.my-service-orders .date {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.my-service-orders button {
+  padding: 7px 5px !important;
+  font-size: 16px !important;
+  width: fit-content;
+  background-color: #e64942;
+}
+
+.my-service-orders button.have-to-rate {
+  background-color: #fa9747;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px !important;
+  padding: 5px 7px !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.modal-body button.add-rate {
+  width: max-content !important;
+  padding: 10px 30px !important;
+  margin: 10px 0 !important;
+}
+
+.my-service-orders button.have-to-rate ion-icon {
+  font-size: 16px;
+}
