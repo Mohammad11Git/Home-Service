@@ -64,7 +64,7 @@ const UserProfileCard = () => {
   const sellerProfileLinks = [
     {
       id: 1,
-      label: "ألملف الشخصي",
+      label: "الملف الشخصي",
       icon: <ion-icon name="person"></ion-icon>,
       link: `/user/${selectedUser?.username}`,
     },
