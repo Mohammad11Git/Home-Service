@@ -159,7 +159,7 @@ const Register = () => {
                     id="first_name"
                     name="first_name"
                     type="text"
-                    placeholder="أدخل اسمك باللغةالعربية"
+                    placeholder="أدخل اسمك باللغة العربية"
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.first_name}
@@ -180,7 +180,7 @@ const Register = () => {
                     id="last_name"
                     name="last_name"
                     type="text"
-                    placeholder="أدخل اسم العائلة باللغةالعربية"
+                    placeholder="أدخل اسم العائلة باللغة العربية"
                     onChange={handleChange}
                     onBlur={handleBlur}
                     value={values.last_name}

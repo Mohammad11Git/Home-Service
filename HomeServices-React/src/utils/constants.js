@@ -7,7 +7,7 @@ import Female from "../Images/Female.jpg";
 import moment from "moment";
 import Cookies from "js-cookie";
 
-export const BASE_API_URL = "https://abdulkareemedres.pythonanywhere.com";
+export const BASE_API_URL = "https://HaidaraIB.pythonanywhere.com";
 export const navbarLinks = [
   {
     label: "الصفحة الرئيسية",

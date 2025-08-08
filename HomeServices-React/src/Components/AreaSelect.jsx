@@ -32,13 +32,14 @@ const customStyles = {
   }),
 };
 
+
 const AreaSelect = ({ areaSelected, setAreaSelected }) => {
   const { areasList } = useSelector((state) => state.homeService);
   const dispatch = useDispatch();
   if (!areasList) {
     const storedAreas = Cookies.get("areasList");
     if (!storedAreas) {
-      fetchFromAPI("api/register/").then((res) => {
+      fetchFromAPI("services/list_all_area").then((res) => {
         dispatch(setAreasList(res));
         Cookies.set("areasList", JSON.stringify(res), { expires: 10 });
       });
