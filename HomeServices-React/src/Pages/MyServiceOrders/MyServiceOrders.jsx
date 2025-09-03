@@ -210,67 +210,69 @@ const MyServiceOrders = () => {
           <Fragment>
             <h1>الطلبات المرسلة</h1>
             <Row className="d-flex justify-content-center gap-2">
-              {myorderData?.map((order) => (
-                <Col lg={3} md={4} xs={7} key={order.id}>
-                  <div
-                    data-aos="fade-up"
-                    className="card my-3 bg-white shadow-sm border-0 rounded"
-                  >
-                    <div className="card-body d-flex flex-column justify-content-between align-items-center gap-2">
-                      <div className="image-holder mt-4">
-                        <Link
-                          to={`/user/${order.seller.username}`}
-                          className="text-black text-decoration-none"
-                        >
-                          <img src={order?.seller.photo} alt="" />
-                        </Link>
-                      </div>
-                      <div className="d-flex text-center flex-column gap-2">
-                        <h5 className="m-0">
+              {myorderData?.map((order) => {
+                return (
+                  <Col lg={3} md={4} xs={7} key={order.id}>
+                    <div
+                      data-aos="fade-up"
+                      className="card my-3 bg-white shadow-sm border-0 rounded"
+                    >
+                      <div className="card-body d-flex flex-column justify-content-between align-items-center gap-2">
+                        <div className="image-holder mt-4">
                           <Link
                             to={`/user/${order.seller.username}`}
                             className="text-black text-decoration-none"
                           >
-                            {order.seller.first_name} {order.seller.last_name}
+                            <img src={order?.seller.photo_url} alt="" />
                           </Link>
-                        </h5>
-                        <div>{order.home_service.title}</div>
-                        <div className="text-muted">
-                          {order.home_service.category.name}
                         </div>
-                      </div>
-                      <div className="d-flex justify-content-center align-items-center">
-                        <span
-                          onClick={() => {
-                            setSelectedForm(order.form);
-                            setShow(true);
-                          }}
-                          className="form-link"
-                        >
-                          الفورم المرفق
-                        </span>
-                      </div>
-                      {getStatus(order, setSelectedRate, setShowRateModal)}
-                      <div className="d-flex flex-column align-items-end gap-4">
-                        <div className="date text-muted w-max">
-                          {moment(order?.create_date).locale("ar").fromNow()}
+                        <div className="d-flex text-center flex-column gap-2">
+                          <h5 className="m-0">
+                            <Link
+                              to={`/user/${order.seller.username}`}
+                              className="text-black text-decoration-none"
+                            >
+                              {order.seller.first_name} {order.seller.last_name}
+                            </Link>
+                          </h5>
+                          <div>{order.home_service.title}</div>
+                          <div className="text-muted">
+                            {order.home_service.category.name}
+                          </div>
                         </div>
-                        {order.status === "Pending" ? (
-                          <button
+                        <div className="d-flex justify-content-center align-items-center">
+                          <span
                             onClick={() => {
-                              setSelectedOrderId(order.id);
+                              setSelectedForm(order.form);
+                              setShow(true);
                             }}
-                            className="my-btn d-flex gap-2 align-items-center"
+                            className="form-link"
                           >
-                            تراجع
-                            <ion-icon ion-icon name="arrow-undo"></ion-icon>
-                          </button>
-                        ) : null}
+                            الفورم المرفق
+                          </span>
+                        </div>
+                        {getStatus(order, setSelectedRate, setShowRateModal)}
+                        <div className="d-flex flex-column align-items-end gap-4">
+                          <div className="date text-muted w-max">
+                            {moment(order?.create_date).locale("ar").fromNow()}
+                          </div>
+                          {order.status === "Pending" ? (
+                            <button
+                              onClick={() => {
+                                setSelectedOrderId(order.id);
+                              }}
+                              className="my-btn d-flex gap-2 align-items-center"
+                            >
+                              تراجع
+                              <ion-icon ion-icon name="arrow-undo"></ion-icon>
+                            </button>
+                          ) : null}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Col>
-              ))}
+                  </Col>
+                );
+              })}
             </Row>
           </Fragment>
         ) : null}

@@ -66,7 +66,7 @@ const MyRecieveOrders = () => {
         data.reverse().filter((item) => item.status === "Underway")
       );
       setunderReviewRecieveData(
-        data.reverse().filter((item) => item.status === "Under review")
+        data.reverse().filter((item) => item.status === "Under Review")
       );
       setexpireRecieveData(
         data.reverse().filter((item) => item.status === "Expire")
@@ -77,8 +77,7 @@ const MyRecieveOrders = () => {
   };
   const getAcceptOrderPrice = async () => {
     try {
-      const data = await fetchFromAPI("services/service_price");
-      setAcceptOrderPrice(data.price);
+      setAcceptOrderPrice(100);
     } catch (err) {
       console.log(err);
     }
@@ -299,7 +298,7 @@ const MyRecieveOrders = () => {
                             to={`/user/${order.client.username}`}
                             className="text-black text-decoration-none"
                           >
-                            <img src={order.client.photo} alt="profile" />
+                            <img src={order.client.photo_url} alt="profile" />
                           </Link>
                         </div>
                         <div className="d-flex text-center flex-column gap-2">
@@ -370,7 +369,7 @@ const MyRecieveOrders = () => {
                             to={`/user/${order.client.username}`}
                             className="text-black text-decoration-none"
                           >
-                            <img src={order.client.photo} alt="profile" />
+                            <img src={order.client.photo_url} alt="profile" />
                           </Link>
                         </div>
                         <div className="d-flex text-center flex-column gap-2">
@@ -446,7 +445,7 @@ const MyRecieveOrders = () => {
                             to={`/user/${order.client.username}`}
                             className="text-black text-decoration-none"
                           >
-                            <img src={order.client.photo} alt="profile" />
+                            <img src={order.client.photo_url} alt="profile" />
                           </Link>
                         </div>
 
@@ -519,7 +518,7 @@ const MyRecieveOrders = () => {
                             to={`/user/${order.client.username}`}
                             className="text-black text-decoration-none"
                           >
-                            <img src={order.client.photo} alt="profile" />
+                            <img src={order.client.photo_url} alt="profile" />
                           </Link>
                         </div>
                         <div className="d-flex text-center flex-column gap-2">

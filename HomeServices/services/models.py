@@ -52,7 +52,7 @@ status_choices = [
     ("Expire", "Expire"),
     ("Pending", "Pending"),
     ("Rejected", "Rejected"),
-    ("Under review", "Under review"),
+    ("Under Review", "Under Review"),
 ]
 
 

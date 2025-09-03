@@ -568,7 +568,7 @@ class AcceptAfterUnderReview(APIView):
             return Response(
                 {"detail": "403 FORBIDDEN"}, status=status.HTTP_403_FORBIDDEN
             )
-        if order.status != "Under review":
+        if order.status != "Under Review":
             return Response(
                 {"detail": "Unexpected error"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -592,7 +592,7 @@ class RejectAfterUnderReview(APIView):
             return Response(
                 {"detail": "403 FORBIDDEN"}, status=status.HTTP_403_FORBIDDEN
             )
-        if order.status != "Under review":
+        if order.status != "Under Review":
             return Response(
                 {"detail": "Unexpected error"}, status=status.HTTP_400_BAD_REQUEST
             )
@@ -741,6 +741,9 @@ class ListRatingsByUsername(APIView):
             serializer.data[i]["client"] = rate.order_service.client.user.to_dict(
                 request.get_host()
             )
+            serializer.data[i][
+                "home_service"
+            ] = rate.order_service.home_service.to_dict()
 
         return Response(serializer.data, status=status.HTTP_200_OK)
 

@@ -45,7 +45,7 @@ const MultiAreaSelect = ({ value = null, setAreasServiceList }) => {
     if (!areasList) {
       const storedAreas = Cookies.get("areasList");
       if (!storedAreas) {
-        fetchFromAPI("api/register/").then((res) => {
+        fetchFromAPI("services/list_all_area").then((res) => {
           dispatch(setAreasList(res));
           Cookies.set("areasList", JSON.stringify(res), { expires: 10 });
         });

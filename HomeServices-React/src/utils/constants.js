@@ -122,7 +122,9 @@ const statusObj = {
   Pending: { label: "جاري الطلب", color: "yellow" },
   Rejected: { label: "مرفوض", color: "#e20e0e" },
   Underway: { label: "جاري التنفيذ", color: "#ffaf1d" },
-  "Under review": { label: "قيد المراجعة", color: "#ffaf1d" },
+  "Under Review": { label: "قيد المراجعة", color: "#ffaf1d" },
+  // Add a default for unknown statuses
+  default: { label: "حالة غير معروفة", color: "gray" },
 };
 
 export const handleRateStars = (avg) => {
@@ -165,7 +167,7 @@ export const getBalance = async (dispatch, setBalance, token) => {
     console.log(err);
   }
 };
-export const getProviderBalance = async (token,setProviderUser) => {
+export const getProviderBalance = async (token, setProviderUser) => {
   try {
     const res = await fetchFromAPI("api/my_balance", {
       headers: {
@@ -175,8 +177,11 @@ export const getProviderBalance = async (token,setProviderUser) => {
     const stroedUser = Cookies.get("providerUser");
     const valueOfUser = JSON.parse(stroedUser);
     if (valueOfUser.balance !== res.total_balance) {
-      Cookies.set("providerUser", JSON.stringify({ ...valueOfUser, balance: res.total_balance }));
-      setProviderUser({ ...valueOfUser, balance: res.total_balance })
+      Cookies.set(
+        "providerUser",
+        JSON.stringify({ ...valueOfUser, balance: res.total_balance })
+      );
+      setProviderUser({ ...valueOfUser, balance: res.total_balance });
     }
   } catch (err) {
     console.log(err);
@@ -193,8 +198,9 @@ export const getTimeofSeconds = (seconds) => {
     days > 0 ? `${days} ${days > 2 && days < 11 ? "ايام" : "يوم"}, ` : "";
   const hourString =
     hours > 0 ? `${hours} ${hours > 2 && hours < 11 ? "ساعات" : "ساعة"}, ` : "";
-  const minuteString = `${minutes} ${minutes > 2 && minutes < 11 ? "دقائق" : "دقيقة"
-    }`;
+  const minuteString = `${minutes} ${
+    minutes > 2 && minutes < 11 ? "دقائق" : "دقيقة"
+  }`;
   return dayString + hourString + minuteString;
 };
 export const isString = (value) => {
@@ -203,13 +209,9 @@ export const isString = (value) => {
 export const isMedia = (media) => {
   const query = `(max-width:${media})`;
   return window.matchMedia(query).matches;
-}
+};
 
-export const getStatus = (
-  order,
-  setSelectedRate,
-  setShowRateModal
-) => {
+export const getStatus = (order, setSelectedRate, setShowRateModal) => {
   if (order.status === "Expire" && order.is_rateable) {
     return (
       <button
@@ -244,13 +246,15 @@ export const getStatus = (
       </button>
     );
   } else {
+    // Use the status or default if not found
+    const config = statusObj[order.status] || statusObj.default;
     return (
       <div className="d-flex gap-2 align-items-center">
         <span
-          style={{ backgroundColor: statusObj[order.status].color }}
+          style={{ backgroundColor: config.color }}
           className="circle"
         ></span>
-        <span>{statusObj[order.status].label}</span>
+        <span>{config.label}</span>
       </div>
     );
   }
