@@ -35,7 +35,7 @@ From your command line, first clone this repo:
 
 ```
 # Clone this repository
-$ https://github.com/abdulkareeme/HomeServices.git
+$ https://github.com/Mohammad11Git/Home-Service.git
 
 # Go into the repository
 $ cd HomeServices

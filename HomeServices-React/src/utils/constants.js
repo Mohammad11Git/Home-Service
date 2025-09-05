@@ -2,8 +2,6 @@ import show from "../Images/show-service.png";
 import order from "../Images/order-service.png";
 import recieve from "../Images/recieve-service.png";
 import { fetchFromAPI } from "../api/FetchFromAPI";
-import Male from "../Images/Male.jpg";
-import Female from "../Images/Female.jpg";
 import moment from "moment";
 import Cookies from "js-cookie";
 
@@ -267,57 +265,3 @@ export const shortInfo = {
   تنظيف:
     "نوفر لك خدمات تنظيف شاملة لمنزلك أو مكتبك بأعلى مستويات الجودة، بفريق عمل مدرب ومجهز بأحدث المعدات والمنظفات الآمنة، لتحصل على نتائج مثالية وتلبية جميع متطلباتك واحتياجاتك",
 };
-
-export const rates = [
-  {
-    id: 0,
-    quality_of_service: 3,
-    commitment_to_deadline: 4,
-    work_ethics: 5,
-    client_comment: "شكرا على الخدمة",
-    seller_comment: null,
-    rating_time: "2019-08-24T14:15:22Z",
-    service_name: "صيانة منزل",
-    category: "صيانة",
-    client: {
-      first_name: "عبد الكريم",
-      last_name: "ادريس",
-      username: "abd01",
-      photo: Male,
-    },
-  },
-  {
-    id: 1,
-    quality_of_service: 3,
-    commitment_to_deadline: 4,
-    work_ethics: 5,
-    client_comment: "شكرا على",
-    seller_comment: null,
-    rating_time: "2019-08-24T14:15:22Z",
-    service_name: "صيانة منزل",
-    category: "صيانة",
-    client: {
-      first_name: "عبد الكريم",
-      last_name: "ادريس",
-      username: "abd01",
-      photo: Male,
-    },
-  },
-  {
-    id: 2,
-    quality_of_service: 3,
-    commitment_to_deadline: 4,
-    work_ethics: 5,
-    client_comment: "على الخدمة",
-    seller_comment: null,
-    rating_time: "2019-08-24T14:15:22Z",
-    service_name: "صيانة منزل",
-    category: "صيانة",
-    client: {
-      first_name: "عبد الكريم",
-      last_name: "ادريس",
-      username: "abd01",
-      photo: Female,
-    },
-  },
-];

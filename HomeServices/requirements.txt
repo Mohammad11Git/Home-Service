@@ -59,3 +59,4 @@ sqlparse==0.4.4
 tomli==2.0.1
 uritemplate==4.1.1
 wcwidth==0.2.13
+python-dotenv
