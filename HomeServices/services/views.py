@@ -756,19 +756,13 @@ class GetEarnings(APIView):
         queryset = Earnings.objects.all()
         serializer = GetEarningsSerializer(data=queryset, many=True)
         serializer.is_valid(raise_exception=False)
-        index = 0
         if queryset.count() > 0:
             for i, earning in enumerate(queryset):
-                if earning.order:
-                    serializer.data[index][
-                        "home_service"
-                    ] = earning.order.home_service.to_dict()
-                else:
-                    serializer.data[index]["home_service"] = {
-                        "title": None,
-                        "seller": None,
-                        "service_id": None,
-                        "seller_full_name": None,
-                    }
-
+                try:
+                    if earning.order:
+                        serializer.data[i][
+                            "home_service"
+                        ] = earning.order.home_service.to_dict()
+                except OrderService.DoesNotExist:
+                    pass
         return Response(serializer.data)
